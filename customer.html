@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dulcecompra</title>
+
+    <!-- Styles / Estilos-->
+    <style>
+        header{
+            background-color: #FFFFFF;
+            text-align: center;
+            font-size: 35px;
+            color: #D69FA4;
+        }
+        h4{
+           text-align: left;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            color: #4E5283  ;
+        }
+
+        h3{
+            color: #4E5283;
+        }
+
+        body{
+            background-color: #D69FA4;
+            text-align: left;
+        }
+
+        form label{
+            margin-left: 30px;
+        }
+
+        img{
+            height: 200px;
+            width: 200px;
+        }
+       
+
+        footer{
+            background-color: #FBD534;
+            text-align: left;
+            margin-top: 60px;
+            color: black;
+        }
+
+        footer p{
+            margin: 0;
+        }
+
+        footer h5{
+            margin-bottom: 4px;
+            font-weight: 400;
+            font-size: medium;
+            color: #4E5283;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Headings / Encabezados-->
+    <header>
+        <table>
+            <tr>
+                <th><img src="..\img\LogoStarBakeryFinal.png"></th>
+                <th><h1>Dulce Compra</h1>
+                    <p>¿Estás listo para diseñar tu pastel?</p>
+                </th>
+            </tr>
+        </table>
+        
+        <hr>
+    </header>   
+    <br><br>
+    
+    <!-- Form customer-->
+    <form id="formCustomer">
+        <h4>Datos del Cliente</h4>
+        <label for="nombre">Nombre:</label> &nbsp  &nbsp  &nbsp  &nbsp
+        <input type="text" id="nombre" name="nombre"> &nbsp &nbsp &nbsp &nbsp
+
+        <label for="telefono">Teléfono: </label> &nbsp &nbsp &nbsp &nbsp
+        <input type="tel" id="telefono" name="telefono" maxlength="10">&nbsp &nbsp &nbsp &nbsp
+
+        <label for="correo">Correo electrónico: </label> &nbsp &nbsp &nbsp &nbsp
+        <input type="email" id="correo" name="correo"> &nbsp &nbsp &nbsp &nbsp
+        <br><br>
+        <label for="correo">Descripción general del pastel: </label> &nbsp &nbsp &nbsp &nbsp
+        <input type="text" id="descripcion" name="descripcion" maxlength="80"> &nbsp &nbsp &nbsp &nbsp
+        <br>
+        <hr>
+    
+        <!-- Design cake -->
+        <h4>Anatomía del Pastel</h4>
+        <!-- Paso 1 : Sabor -->
+        <div id="paso1">
+            <h3>Paso 1: Bizcocho o Pan</h3>
+            <p>La base del pastel se encarga de dar estructura y presencia a toda la preparación. También le brinda estilo y sabor desde la primer mordida.</p>
+            <label>Sabor</label><label>Dulce precio</label><br>
+            <input type="checkbox" id="sabor1" name="sabor1" value="Vainilla">
+            <label for="sabor1">Vainilla</label> <label>$100.00</label><br>
+            <input type="checkbox" id="sabor2" name="sabor2" value="Chocolate">
+            <label for="sabor2>">Chocolate</label> <label>$130.00</label><br>
+            <input type="checkbox" id="sabor3" name="sabor3" value="Fresa">
+            <label for="sabor3">Fresa</label> <label>$150.00</label>
+        </div>
+        <!-- Paso 2 : Relleno -->
+        <div id="paso2">
+            <h3>Paso 2: Relleno</h3>
+            <p>Preparación de consistencia firme para mantener la estructura del pastel como: mermeladas, crema o fruta.</p>
+            <label>Relleno</label><label>Dulce precio</label><br>
+            <input type="checkbox" id="relleno1" name="relleno1" value="Durazno">
+            <label for="relleno1">Durazno</label><label>$30.00</label><br>
+            <input type="checkbox" id="relleno2" name="relleno2" value="Crema">
+            <label for="relleno2>">Crema</label><label>$40.00</label><br>
+            <input type="checkbox" id="relleno3" name="relleno3" value="mFresa">
+            <label for="relleno3">Mermelada de Fresa</label><label>$50.00</label>
+        </div>
+        <!-- Paso 3 : Cubierta -->
+        <div id="paso3">
+            <h3>Paso 3: Cubierta</h3>
+            <p>Es la parte externa del pastel, es embellecer toda la preparación con Merengue, Fondant, Chantilly.</p>
+            <label>Cubierta</label><label>Dulce precio</label><br>
+            <input type="checkbox" id="cubierta1" name="cubierta1" value="Merengue">
+            <label for="cubierta1">Merengue</label><label>$50.00</label><br>
+            <input type="checkbox" id="cubierta2" name="cubierta2" value="Chantilly">
+            <label for="cubierta2>">Chantilly</label><label>$80.00</label><br>
+            <input type="checkbox" id="cubierta3" name="cubierta3" value="Fondant">
+            <label for="cubierta3">Fondant</label><label>$120.00</label>
+        </div>
+        <!-- Paso 4 : Adornos -->
+        <div id="paso4">
+            <h3>Paso 4: Adornos</h3>
+            <p>Es el toque final de la preparación.</p>
+            <label>Adorno</label><label>Dulce precio</label><br>
+            <input type="checkbox" id="adorno1" name="adorno1" value="Chispas">
+            <label for="adorno1">Chispas</label><label>$50.00</label><br>
+            <input type="checkbox" id="adorno2" name="adorno2" value="Perlas">
+            <label for="adorno2>">Perlas</label><label>$80.00</label><br>
+            <input type="checkbox" id="adorno3" name="adorno3" value="Confeti">
+            <label for="adorno3">Confeti</label><label>$120.00</label>
+        </div>
+        <br>
+        <input type="submit" value="Enviar"
+    </form>
+    <!-- Footer -->
+    <footer>
+        <h4>Servicio a Domicilio</h4>
+        <h5>Dirección:</h5>
+        <p>Calle Dulce, No. 10, Col. Sabores, Chilpancingo, Gro., México C.P 39000</p>
+        <h5>Teléfono:</h5>
+        <p>7471740334</p>
+        <h5>Horarios de Atención:</h5>
+        <p>9:00 - 21:00 hrs.</p>
+    </footer>
+</body>
+</html>
